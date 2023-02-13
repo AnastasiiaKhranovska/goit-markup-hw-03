@@ -12,38 +12,53 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <!--Normalize-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!--Styles-->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
-      <nav>
-        <a class="header-web" href="./index.html"
-          ><span style="" class="fweb">Web</span>Studio</a
-        >
-        <ul>
-          <li><a class="header-link" href="./index.html">Studio </a></li>
-          <li><a class="header-link" href="./potfolio.html">Portfolio</a></li>
-          <li><a class="header-link" href="">Contacts</a></li>
-        </ul>
-      </nav>
-      <address>
-        <ul>
-          <li>
-            <a class="contact" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li><a class="contact" href="tel:+110001111111">+110001111111</a></li>
-        </ul>
-      </address>
+      <div class="container">
+        <nav>
+          <a class="header-web" href="./index.html"
+            ><span style="" class="fweb">Web</span>Studio</a
+          >
+          <ul>
+            <li><a class="header-link" href="./index.html">Studio </a></li>
+            <li><a class="header-link" href="./potfolio.html">Portfolio</a></li>
+            <li><a class="header-link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <address>
+          <ul>
+            <li>
+              <a class="contact" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="contact" href="tel:+110001111111">+110001111111</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
     <main>
       <section class="hero-title">
+        <div class="container">
         <h1 class="hero">Effective Solutions for Your Business</h1>
         <button class="button-white" type="button">Order Service</button>
+        </div>
       </section>
-      <section>
+      <section class="section">
+        <div class="container">
         <h2 hidden></h2>
         <ul>
           <li>
@@ -75,16 +90,20 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
-      <section>
+      <section class="section">
+        <div class="container">
         <h2 class="subtitel">What are we doing</h2>
         <ul>
           <li><img src="./images/img1.jpg" alt="program" width="360" /></li>
           <li><img src="./images/img2.jpg" alt="communicate" width="360" /></li>
           <li><img src="./images/img3.jpg" alt="learning" width="360" /></li>
         </ul>
+        </div>
       </section>
-      <section class="team">
+      <section class="team section">
+        <div class="container">
         <h2 class="subtitel">Our Team</h2>
         <ul>
           <li class="gallery">
@@ -109,6 +128,7 @@
           </li>
         </ul>
       </section>
+      </div>
     </main>
     <footer class="footer">
       <a class="footer-web" href="./index.html">
