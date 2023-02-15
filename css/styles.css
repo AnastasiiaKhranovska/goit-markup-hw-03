@@ -15,7 +15,13 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-p, h1, h2, h3, h4, h5, h6 {
+p, 
+h1, 
+h2, 
+h3, 
+h4,
+h5, 
+h6 {
     margin-top: 0;
 }
 ul {
@@ -32,6 +38,8 @@ ul {
 .header {
     background: var(--color-inverted);
     text-decoration: none;
+    padding: 24px;
+    border-bottom: 1px solid var(--color-green);
 }
 .header-web {
     text-decoration: none;
@@ -43,10 +51,31 @@ ul {
     color:var(--color-secondary);
     letter-spacing: 0.03em;
 }
+.header-container {
+display: flex;
+align-items: center;
+gap: 40px;
+}
+.header-nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 76px;
+}
+.header-menu {
+    display: flex;
+    gap: 40px;
+}
+.header-contact {
+    display: flex;
+    gap: 40px;
+}
 .header-link {
     color: var(--color-secondary);
     text-decoration: none;
     font-weight: 500;
+    padding: 24px;
+    
 }
 .header-link:hover,
 .header-link:focus {
@@ -73,6 +102,9 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.04em;
     font-family: 'Roboto', sans-serif;
+    padding: 16px 32px;
+    border: none;
+   
 }
 .button-white:hover,
 .button-white:focus {
@@ -87,8 +119,8 @@ ul {
     letter-spacing: 0.04em;
     font-family: 'Roboto', sans-serif;
 }
-.btn-blue:last-child {
-    margin-bottom: 72px;
+.btn-blue {
+    
 }
  .button-blue {
     color: var(--color-brand);
@@ -100,6 +132,10 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.04em;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 72px;
+    padding: 12px 24px;
+    
+    
 }
 .button-blue:hover,
 .button-blue:focus {
@@ -112,27 +148,67 @@ ul {
     letter-spacing: 0.04em;
     font-family: 'Roboto', sans-serif;
 }
+.conteiner-navigation {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: center;
+    
+    
+}
+.section-navigation {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
  .hero {
     color: var(--color-inverted);
     background: var(--color-secondary);
     font-size: 56px;
     line-height: 1.07; 
     margin-bottom: 48px;
+    letter-spacing: 0.02em;
+    margin: 0 auto 48px;
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+
+
 }
 .hero-title {
     color: var(--color-inverted);
     background: var(--color-secondary);
     padding-top: 188px;
     padding-bottom: 188px;
+    text-align: center;
 }
 .section {
     padding: 120px 0;
 }
+.section-with-buttom {
+    padding: 120px 0;
+    padding-top: 96px;
+}
+.section-text {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    
+    }
+    .section-only-text {
+padding-top: 120px;
+padding-bottom: 0;
+    }
+    .section-team {
+        display: flex;
+        flex-wrap: wrap;
+    }
 .subtitel {
     color: var(--color-secondary);
     font-size: 36px;
     line-height: 1.11;
     margin-bottom: 72px;
+    text-align: center;
 }
 .titel {
     color: var(--color-secondary);
@@ -141,12 +217,44 @@ ul {
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
+    
+    
 }
 .gallery {
-    background: var(--color-inverted);
+    background: var(--color-inverted); 
+    text-align: center;
+    border-radius: 0px 0px 4px 4px;
+    
 }
 .team {
     background: var(--color-white);
+}
+.section-doing {
+    display: flex;
+    gap: 24px;
+}
+.section-team {
+    display: flex;
+    gap: 24px;
+
+}
+.section-general {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    
+}
+.general-item {
+    display: flex;
+    flex-basis: calc((100% - 48px) / 3);
+    flex-direction: column;
+
+}
+.card-info {
+    border: 1px solid var(--color-green);
+    border-top: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .footer-web {
     color: var(--color-white);
@@ -161,9 +269,16 @@ ul {
 .footer {
     color: var(--color-green);
     background: var(--color-secondary);
+    padding: 100px 0;
+    padding-left: 156px;
+    
 }
 .footer-text {
-   color: var(--color-green); 
+   color: var(--color-green);
+   width: 264px;
+   word-wrap: break-word;
+    letter-spacing: 0.02em;
+
 }
 .fweb {
     color: var(--color-brand);
