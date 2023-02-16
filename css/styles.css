@@ -148,7 +148,7 @@ gap: 40px;
     align-items: center;
     gap: 24px;
     justify-content: center;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
  .hero {
     color: var(--color-inverted);
